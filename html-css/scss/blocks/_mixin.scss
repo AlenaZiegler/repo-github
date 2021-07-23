@@ -1,0 +1,31 @@
+button {
+  cursor: pointer;
+}
+
+@mixin container () {
+  margin: 0 auto;
+  max-width: 1160px;
+  width: 100%;
+  padding: 0 10px;
+}
+
+@mixin button ($PadTop, $PadBot, $BcgColor, $Textcol: $AddColor, $HoverCol: $MainColor, $solid: none) {
+  padding: $PadTop $PadBot;
+  background-color: $BcgColor;
+  color: $Textcol;
+  border-style: $solid;
+
+  &:hover {
+    box-shadow: 0 0 20px rgb(190, 189, 189);
+    color: $HoverCol;
+
+  }
+}
+
+
+@mixin form () {
+  margin-top: 20px;
+  padding: 13px 277px 13px 17px;
+  border: 1px solid $AddColor;
+  opacity: 0.5;
+}

@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1160px;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.header {
+  padding: 18px; 0;
+  background-color: #222222;
+}
+.header_wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.header_logo {
+  margin: 0 41px 0 0;
+}
+.hader_item:not(:last-child) {
+  margin-right: 33px;
+}
+.intro {
+  height: 764px;
+  background: #F1E4E6;
+  margin-bottom: 65px;
+  
+}
+.intro_text {
+  max-width: 377px;
+  border-left:  12px solid  #F16D7F ;
+  padding-left: 16px;
+
+}
+.decor_red {
+  color: #F16D7F;
+}
+.span_black{
+  font-weight: 900px;
+  font-size: 50px;
+}
+.span_bold {
+  font-weight: 700px;
+  font-size: 32px;
+}
+.intro_wrap {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-image: url(/image/man-title.png);
+  background-repeat: no-repeat;
+  background-position: -208px bottom;
+  }
+  .category_item {
+    width: 100%;
+    height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+    color: #FFFFFF;
+    font-style: normal;
+    text-decoration: none;
+  }
+  .category_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+  }
+  .category_item:not(:last-child) {
+    width: 360px;
+    margin-bottom: 30px;
+   }
+   .category_item_image-1 {
+     background-image: url(image/for_women.jpg);
+   }
+   .category_item_image-2 {
+     background-image: url(image/for_men.png);
+   }
+   .category_item_image-3 {
+     background-image: url(image/for_kids.png);
+   }
+   .category_item_image-4 {
+     background-image: url(image/ACCESORIES.png);
+   }
+   .Futufered_Items_text {
+     text-align: center;
+     margin-top: 96px;
+     margin-bottom: 48px;
+   }
+   .Futufered_Items_header {
+     font-size: 30px;
+     line-height: 36px;
+     font-weight: normal;
+     font-style: normal;
+     color: #222222
+   }
+.Futufered_Items_card {
+  width: 360px;
+  height: 581px;
+  margin-bottom: 35px;
+}
+
+.card_header {
+  margin-bottom: 13px;
+  font-weight: normal;
+  font-size: 13px;
+}
+.card_info {
+  padding: 25px 0px 20px 18px;
+  background: #F8F8F8;
+}
+.price{
+  margin-top: 18px;
+  font-style: normal;
+  font-weight: normal;
+  color: #F16D7F;
+}
+.paragraph {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #5D5D5D;
+}
+.Futufered_Items_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.browse_button {
+  text-decoration: none;
+  color: #F26376;
+  border: 1px solid #FF6A6A; 
+  padding: 15px 40px;
+}  
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 0 95px;
+}
+.footer {
+  height: 341px;
+  background: #222224;
+
+}
+
+
+
+

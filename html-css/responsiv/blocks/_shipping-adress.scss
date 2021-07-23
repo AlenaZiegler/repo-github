@@ -1,0 +1,113 @@
+.purch-info {
+    width: 40%;
+    display: flex;
+  flex-wrap: wrap;
+  justify-items: space-between;
+ .purch-info_block{
+
+      & form { 
+          width: 55%;
+    
+        & h4 {
+            color: $AddColor;
+            font-weight: 100;
+        }
+    
+        .adress {
+            @include form ();
+        }
+    
+        .QUOTE {
+            margin-top: 20px;
+            padding: 10px 14px;
+            opacity: 0.5;
+        }
+      }
+ }
+
+
+    .checkout {
+        margin-top: 57px;
+        background: #F5F3F3;
+        padding: 40px 38px;
+
+        & h6 {
+            font-weight: 100;
+            line-height: 24px;
+            text-align: end;
+        }
+
+        & h4 {
+            text-align: end;
+
+            & span {
+                color: $MainColor;
+            }
+        }
+
+        & hr {
+            margin: 21px 0 17px;
+            opacity: 0.2;
+        }
+
+        & button {
+            width: 100%;
+            font-size: 16px;
+            @include button (15px, 42px, $MainColor, white, hsl(90, 2%, 68%));
+
+            &:hover {                          
+                transition-duration:  2s;
+                transform: scale(1.2);
+                background: $MainColor;
+                border: 5px solid red;
+                color: white;
+                font-size: 22px;
+
+            }
+
+        }
+    }
+}
+@media  (max-width: 768px) {
+        .purch-info{
+            width: 80%;
+            .purch-info_block {
+                width: 100%;
+                display: flex;
+                align-items: flex-end;
+             & form .adress {
+                padding: 13px 45% 13px 17px;
+             }
+            }
+            .checkout {
+                width: 31%;
+                & h4 {
+                    font-weight: 100;
+                }
+            }
+        }      
+}
+@media (max-width: 425px) {
+    .purch-info{
+        width: 100%;
+        .purch-info_block {
+            width: 100%;
+        flex-wrap: wrap;
+           
+         & form {
+             width: 100%;
+             margin: 0 10px;
+            .adress {
+                padding: 13px 60% 13px 17px;
+             }
+         }
+        }
+        .checkout {
+            width: 100%;
+            margin: 48px 10px 0 10px;
+            & h4 {
+                font-weight: 100;
+            }
+        }
+    }     
+}

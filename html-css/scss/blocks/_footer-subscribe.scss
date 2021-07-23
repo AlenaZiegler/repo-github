@@ -1,0 +1,109 @@
+.footer {
+    background-size: 100% 100%;
+    background-image: url(/image/photobackgraund.png);
+    background-repeat: no-repeat;
+
+
+    .container {
+        @include container ();
+
+        &__wrap {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            padding-bottom: 158px;
+            padding-top: 98px;
+
+            .feedback {
+                width: 25%;
+                text-align: center;
+                align-items: center;
+
+                & p {
+                    margin-top: 25px;
+                    line-height: 24px;
+                }
+            }
+
+            .subscribe {
+                width: 55%;
+                text-align: center;
+                align-items: center;
+                line-height: 24px;
+                margin-bottom: 27px;
+
+                & h2 {
+                    font-weight: 100;
+                }
+
+                & form {
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 32px;
+
+                    .email {
+                        border: none;
+                        background: #E1E1E1;
+                        border-top-left-radius: 20px;
+                        border-bottom-left-radius: 20px;
+                        padding: 7px 64px 7px 22px;
+
+                        &:hover {
+                            background-color: rgb(207, 205, 205);
+                        }
+                    }
+
+                    .submit {
+                        border-top-right-radius: 20px;
+                        border-bottom-right-radius: 20px;
+                        border: none;
+                        background-color: #F16D7F;
+                        color: white;
+                        padding: 15px 20px;
+
+                        &:hover {
+                            background-color: #f02e48;
+                        }
+                    }
+
+                }
+            }
+        }
+
+    }
+}
+
+.soc-media {
+    background-color: #222224;
+    padding: 30px 0;
+    color: rgb(233, 198, 198);
+
+    .container {
+        @include container ();
+
+        &__wrap {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .icon {
+                display: flex;
+                flex-direction: row;
+
+                &__fill {
+                    width: 32px;
+                    height: 32px;
+                    background: white;
+                    fill: black;
+                    margin-right: 7px;
+
+                    &:hover {
+                        background-color: $MainColor;
+                        fill: white
+                    }
+                }
+
+            }
+        }
+    }
+}

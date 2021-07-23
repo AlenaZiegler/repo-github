@@ -1,0 +1,130 @@
+.container {
+    @include container ();
+
+    .reg__content {
+        @include content (64px, 0, 96px, 0);
+
+        &__column {
+            display: flex;
+            justify-content: space-between;
+
+            &__info {
+                width: 35%;
+
+                & h4 {
+                    font-weight: 100;
+                    margin-bottom: 20px;
+                    opacity: 0.8;
+                }
+
+                & input {
+                    & [type="radio"]::-ms-check {
+                        background-color: $MainColor;
+                        color: $MainColor;
+                    }
+
+                    margin-bottom: 20px;
+                    padding: 13px 227px 23px 16px;
+                }
+
+                & p {
+                    opacity: 0.5;
+                    line-height: 16px;
+                }
+
+                & button {
+                    margin-top: 55px;
+                    @include button (16px, 30px, $MainColor, white, white);
+
+                    &:hover {
+                        background-color: rgb(250, 71, 71);
+                    }
+                }
+            }
+
+            &__text {
+                width: 50%;
+                margin: 0 0;
+
+                & h2 {
+                    font-weight: 100;
+                    opacity: 0.8;
+                }
+
+                & p {
+                    margin: 20px 0;
+                }
+
+                & ul {
+
+                    list-style-image: url(image/checked.svg);
+                    list-style-position: inside;
+
+
+                    & li {
+                        margin-bottom: 16px;
+                        padding-left: 0;
+
+                        & span {
+                            position: relative;
+                            right: -10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 768px;
+
+        .reg__content__column__info {
+            margin-left: 10px;
+        }
+
+        .reg__content__column__text {
+            width: 40%;
+            margin-right: 10px;
+        }
+    }
+
+}
+
+@media (max-width: 425px) {
+    .container {
+        max-width: 425px;
+
+        .reg__content__column {
+            display: block;
+
+            &__info {
+                width: 100%;
+            }
+        }
+
+        .reg__content__column__text {
+            width: 100%;
+            margin: 0 10px;
+           
+            & h2 {
+                margin-top: 40px;
+                font-size: 16px;
+                text-align: left;
+                margin-left: 0%;  
+                opacity: 0.7;             
+            }
+            & p {
+                opacity: 0.7;
+            }
+            & li {
+                opacity: 1;
+            }
+           
+            
+
+
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.header {
+    background-color: #222222;
+    height: 45px;
+    padding: 18px;
+
+    .container {
+        @include container ();
+
+        &__wrap {
+            display: flex;
+            justify-content: space-between;
+
+            .offset {
+                margin-right: 10px;
+                fill: white;
+            }
+
+            
+
+
+        }
+    }
+}

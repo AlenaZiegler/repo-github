@@ -1,0 +1,76 @@
+.container {
+    .content {
+        @include content (64px, 0, 96px, 0);
+
+        &__column {
+            display: flex;
+            justify-content: space-between;
+
+            .regist-info {
+                width: 35%;
+
+                & h4 {
+                    font-weight: 100;
+                    margin-bottom: 20px;
+                    opacity: 0.8;
+                }
+
+                input {
+                    & [type="radio"]::-ms-check {
+                        background-color: $MainColor;
+                        color: $MainColor;
+                    }
+                    margin-bottom: 20px;
+                    padding: 13px 227px 13px 16px;
+                }
+
+                & p {
+                    opacity: 0.5;
+                    line-height: 16px;
+
+                }
+
+                & button {
+                    margin-top: 55px;
+                    @include button (16px, 30px, $MainColor, white, white);
+
+                    &:hover {
+                        background-color: rgb(250, 71, 71);
+                    }
+
+                }
+            }
+        }
+
+        .text {
+            width: 50%;
+
+            & h2 {
+                font-weight: 100;
+                opacity: 0.8;
+            }
+
+            & p {
+                margin: 20px 0;
+            }
+
+            & ul {
+
+                list-style-image: url(/image/checked.svg);
+                list-style-position: inside;
+
+
+                & li {
+                    margin-bottom: 16px;
+
+                    & span {
+                        position: relative;
+                        right: -10px;
+                    }
+                }
+            }
+
+        }
+    }
+
+}

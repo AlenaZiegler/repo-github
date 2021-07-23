@@ -1,0 +1,136 @@
+.header {
+    background-color: #222;
+    height: 45px;
+    padding: 18px;
+
+    .container {
+        @include container ();
+
+        &__wrap {
+            display: flex;
+            justify-content: space-between;
+
+
+            .offset {
+                fill: white;
+                margin-right: 10px;
+            }
+
+            .wrap {
+                display: flex;
+                flex-direction: row;
+
+                .burger {
+                    color: white;
+                    position: relative;
+                    z-index: 1;
+
+
+                    & label {
+                        padding-right: 10px;
+
+                    }
+
+                    #burger {
+                        display: none;
+                    }
+
+                    #burger:checked~.nav {
+                        display: block;
+                    }
+
+                    #burger:not(checked)~.nav {
+                        display: none;
+                    }
+
+                    .nav {
+                        position: absolute;
+                        top: 63px;
+                        right: -82px;
+                        z-index: 6;
+                    }
+                }
+
+                .menu {
+                    width: 232px;
+                    height: calc(100vh - 81px);
+
+                    display: flex;
+                    justify-content: space-between;
+
+                    .text {
+                        text-align: left;
+                        padding: 37px 0 0 34px;
+                        z-index: 1;
+
+                        & h4 {
+                            margin-bottom: 24px;
+                            color: black;
+                        }
+
+                        & h5 {
+                            color: $MainColor;
+                            margin-top: 24px;
+                            margin-bottom: 12px;
+                        }
+
+                        & a {
+                            cursor: pointer;
+                            color: $AddColor;
+                            font-weight: 100;
+                            padding-left: 24px;
+
+                            &:hover {
+                                color: $MainColor;
+                            }
+
+                        }
+
+                        & h6:not(:last-child) {
+                            margin-bottom: 11px;
+                        }
+                    }
+
+                    .item {
+                        margin: 16px 17px 0 0;
+
+                    }
+                }
+
+            }
+        }
+
+    }
+}
+
+@media ( max-width: 1024px) {
+    nav {
+        & .header{
+            & .container {
+                max-width: 1024px;
+                padding: 0;
+                .header .container__wrap .wrap .burger .nav {
+                    right: -91px;
+                }
+            }
+        }
+    } 
+}
+@media (max-width: 768px) {
+    .header{
+        & .container {
+            max-width: 768px;
+            padding: 0;
+        }
+    }   
+}
+
+@media (max-width: 425px) {
+    .header{
+        & .container {
+            max-width: 425px;
+            padding: 0 18px;
+        }
+    }
+
+}

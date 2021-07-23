@@ -1,0 +1,18 @@
+.bgt {
+    padding: 60px 0;
+    background: #F8F3F4;
+
+    & .container {
+        @include container ();
+        & h2 {
+            color: $MainColor;
+            font-weight: 400;
+        }   
+    }
+   
+
+   
+
+
+
+}

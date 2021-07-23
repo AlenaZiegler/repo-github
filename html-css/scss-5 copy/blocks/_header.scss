@@ -1,0 +1,78 @@
+.header {
+    background-color:#222;
+    height: 45px;
+    padding: 18px;
+
+    .container {
+        @include container ();
+
+        &__wrap {
+            display: flex;
+            justify-content: space-between;
+
+            .offset {
+                margin-right: 10px;
+                fill: white;
+            }
+
+            .wrap {
+                display: flex;
+                flex-direction: row;
+
+                & details {
+                    position: relative;
+                    z-index: 1;
+               
+                    &::-webkit-details-marker {
+                        display: none;
+                    }
+               
+
+                & summary {
+                    text-align: end;
+                }
+
+                .menu {
+                    width: 232px;
+                    height: 564px;
+                    background: rgb(247, 232, 232);               
+                    display: flex;
+                    justify-content: space-between;
+
+                    .text {
+                        padding: 37px 0 0 34px;
+                        z-index: 1;
+
+                        & h4 {
+                            margin-bottom: 24px;
+                        }
+
+                        & h5 {
+                            color: $MainColor;
+                            margin-top: 24px;
+                            margin-bottom: 12px;
+                        }
+
+                        & h6 {
+                            color: $AddColor;
+                            font-weight: 100;
+                            padding-left: 24px;
+
+                        }
+
+                        & h6:not(:last-child) {
+                            margin-bottom: 11px;
+                        }
+                    }
+
+                    .item {
+                        margin: 16px 17px 0 0;
+                    }
+                }
+
+            }
+        }
+
+    }
+}
+}
